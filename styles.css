@@ -24,7 +24,7 @@ body {
     font-size: 40px;
     text-align: end;
     padding:4px;
-    min-height: 20px;
+    min-height: 50px;
 }
 
 button {
@@ -55,4 +55,22 @@ button {
 #clear:hover {
     background-color: yellow;
     color:black;
+}
+
+.theme-picker {
+    display: flex;
+    background: #fff;
+    width: 200px;
+    height: 360px;
+    margin: 50px;
+    padding: 45px;
+    flex-direction: column;
+}
+.theme-picker div {
+    height:50px;
+    background: #f2eaff;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
 }
