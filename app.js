@@ -26,6 +26,8 @@ function calculate(button) {
     }
 }
 
+buttons.forEach(button => button.addEventListener('click', () => calculate(button)))
+
    for (i of themeSelections) {
       i.addEventListener('click', (e) => {
         themeSelected = (e.target.classList[0]);
