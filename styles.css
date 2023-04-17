@@ -281,5 +281,29 @@ body:has(#calculator.racer) {
 background: url(https://images.unsplash.com/photo-1572359642202-3cc832e60700?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
 background-position: 0 66%;
 background-size: cover;
+}
 
+#calculator.racer ~ .theme-picker #theme.racer:before  {
+    content: "👉";
+    margin-right:10px
+}
+
+#calculator.gamer ~ .theme-picker #theme.gamer:before  {
+    content: "👉";
+    margin-right:10px
+}
+
+#calculator.the-80s ~ .theme-picker #theme.the-80s:before  {
+    content: "👉";
+    margin-right:10px
+}
+
+#calculator.the-90s ~ .theme-picker #theme.the-90s:before  {
+    content: "👉";
+    margin-right:10px
+}
+
+#calculator.hello-kitty ~ .theme-picker #theme.hello-kitty:before  {
+    content: "👉";
+    margin-right:10px
 }
