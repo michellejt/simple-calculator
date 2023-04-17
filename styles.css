@@ -60,12 +60,13 @@ button {
 .theme-picker {
     display: flex;
     background: #fff;
-    width: 200px;
+    width: 230px;
     height: 360px;
-    margin: 50px;
-    padding: 45px;
+    margin: 0 0 0px 50px;
+    padding: 10px 15px 0px 15px;
     flex-direction: column;
 }
+
 .theme-picker div {
     height:50px;
     background: #f2eaff;
@@ -73,4 +74,212 @@ button {
     align-items: center;
     flex: 1;
     padding: 10px;
+}
+
+#theme:hover {
+    cursor:pointer;
+}
+
+/*hello kitty*/
+#calculator.hello-kitty {
+    background-color: red;
+}
+
+.hello-kitty .screen {
+    background-color: rgb(221 224 223);
+}
+
+.hello-kitty button {
+    background: #fff;
+    color:red;
+}
+
+.hello-kitty button:nth-child(4),
+.hello-kitty button:nth-child(8),
+.hello-kitty button:nth-child(12),
+.hello-kitty #equals
+{
+    background: #0458a1;
+    color:white;
+}
+
+.hello-kitty #clear {
+    background: #d2e547;
+    color:red;
+}
+
+/*the 90s*/
+#calculator.the-90s {
+    background-color: #5ce1e6;
+    box-shadow: 0 0 20px #7e0a7b;
+}
+
+.the-90s .screen {
+    background-color: rgb(221 215 216);
+}
+
+.the-90s button {
+    background: #fff;
+    color:red;
+}
+
+.the-90s button:nth-child(4),
+.the-90s button:nth-child(8),
+.the-90s button:nth-child(12),
+.the-90s #equals
+{
+    background: #ffd33b;
+    color:white;
+}
+
+.the-90s button {
+    background: #ff6bda;
+    color:black
+}
+
+.the-90s #clear {
+    background: #47c4f3;
+    color: white;
+}
+/*the 80s*/
+#calculator.the-80s {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 2%, rgba(71,3,82,1) 78%);
+    box-shadow: 0 0 20px #30f80b;
+    }
+    
+    .the-80s .screen {
+        background-color: #49fb35;
+    }
+    
+    .the-80s button {
+    background: rgb(254,243,1);
+    background: linear-gradient(0deg, rgba(254,243,1,1) 0%, rgba(255,132,87,1) 55%, rgba(255,0,215,1) 90%);
+        color: #00a3d4;
+    }
+    
+    .the-80s button:nth-child(4),
+    .the-80s button:nth-child(8),
+    .the-80s button:nth-child(12),
+    .the-80s #equals
+    {
+        background: #00a3d4;
+        color:white;
+    }
+    
+    .the-80s #clear {
+        background: #c32aff;
+        color:black;
+    }
+
+    /*gamer*/
+
+#calculator.gamer {
+    background-color: black;
+    box-shadow: 0 0 20px #e4e8f1;
+}
+
+.gamer .screen {
+    background-color: rgb(140 144 143);
+}
+
+.gamer button:nth-child(5),
+.gamer button:nth-child(6),
+.gamer button:nth-child(7),
+.gamer button:nth-child(8)
+{
+    color:#fc7d04;
+}
+
+.gamer button:nth-child(9),
+.gamer button:nth-child(10),
+.gamer button:nth-child(11),
+.gamer button:nth-child(12)
+{
+    color:#7fe443;
+}
+
+.gamer button:nth-child(13),
+.gamer button:nth-child(14),
+.gamer button:nth-child(15),
+.gamer button:nth-child(16)
+{
+    color:#39bde0;
+}
+
+.gamer #equals {
+    background-color: black;
+}
+
+
+.gamer button {
+    background: black;
+    color:#FF3131;
+}
+
+
+.gamer #clear {
+    background: #0c28bc;
+    color: white
+}
+
+/*racer*/
+#calculator.racer {
+    background-color: white;
+    box-shadow: 0 0 20px #252424;
+}
+
+.racer .screen {
+    background-color: rgb(255 247 0 / 29%);
+}
+
+.racer #equals {
+    background-color: black;
+}
+
+
+.racer button {
+    background: black;
+    color:white;
+    border-radius:0;
+}
+
+
+.racer #clear {
+    background: red;
+    color: white
+}
+
+body{
+    background: url(https://source.unsplash.com/random/900×700/?abstract);
+    background-size: cover;
+}
+
+body:has(#calculator.hello-kitty) {
+    background: url(https://images.unsplash.com/photo-1632179008519-c1dd068f9bdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+}
+
+body:has(#calculator.gamer) {
+ background: url(https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+ background-position: 0 4%;
+ background-size: cover;
+}
+
+body:has(#calculator.the-90s) {
+ background: url(https://images.unsplash.com/photo-1592925997296-970cb3f2f23d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+ background-position: 0 4%;
+ background-size: cover;
+}
+
+body:has(#calculator.the-80s) {
+background: url(https://images.unsplash.com/photo-1595355115488-f18d14e02afe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1924&q=80);
+background-position: 0px 49%;
+background-size: cover;
+}
+
+body:has(#calculator.racer) {
+background: url(https://images.unsplash.com/photo-1572359642202-3cc832e60700?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+background-position: 0 66%;
+background-size: cover;
+
 }

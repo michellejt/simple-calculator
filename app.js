@@ -32,8 +32,8 @@ buttons.forEach(button => button.addEventListener('click', () => calculate(butto
       i.addEventListener('click', (e) => {
         themeSelected = (e.target.classList[0]);
         let applyTheme = calculator.classList.length;
-        console.log(themeSelected)
-        console.log(applyTheme)
+/*      console.log(themeSelected)
+        console.log(applyTheme) */
         if (applyTheme === 2) {
           calculator.classList.add(themeSelected);
         } else {
